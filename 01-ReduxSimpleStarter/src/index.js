@@ -1,7 +1,6 @@
-/* This code is intentionally incorrect */
-
 //  Import libraries
 import React from 'react';
+import ReactDOM from 'react-dom';
 
 //  Create component
 const App = function() {
@@ -9,4 +8,4 @@ const App = function() {
 };
 
 //  Render element
-React.render(App);
+ReactDOM.render(<App />, document.querySelector('.container'));

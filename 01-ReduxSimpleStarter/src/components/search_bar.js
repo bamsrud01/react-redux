@@ -1,10 +1,13 @@
 //  Import libraries
-import React from 'react';
+import React, { Component } from 'react';
 
 //  Create component
-const SearchBar = () => {
-  return <input />;
-};
+class SearchBar extends Component {
+
+  render() {
+    return <input onChange={event => console.log(event.target.value)} />;
+  }
+}
 
 //  Export component
 export default SearchBar;

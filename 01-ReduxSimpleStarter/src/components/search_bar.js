@@ -1,7 +1,7 @@
 //  Import libraries
 import React, { Component } from 'react';
 
-//  Create component
+//  Create SearchBar component
 class SearchBar extends Component {
   constructor(props) {
     super(props);

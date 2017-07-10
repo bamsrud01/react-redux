@@ -4,7 +4,11 @@ import React from 'react';
 //  Build VideoDetail component
 const VideoDetail = ({ video }) => {
   if (!video) {
-    return <div>Loading...</div>;
+    return (
+      <div>
+        Loading...
+      </div>
+    );
   }
 
   const videoId = video.id.videoId;

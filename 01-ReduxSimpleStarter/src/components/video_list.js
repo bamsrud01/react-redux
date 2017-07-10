@@ -11,6 +11,7 @@ const VideoList = (props) => {
       <VideoListItem
         key={video.etag}
         video={video}
+        onVideoSelect={props.onVideoSelect}
       />
     );
   });

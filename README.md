@@ -3,6 +3,8 @@
 ## Description
 
 ## Contents
+  01. Video Player
+    - This application introduces React in a video player application using the YouTube API.  Users can search for videos, select from a list, and play selected videos in this application.
 
 ## Author
 

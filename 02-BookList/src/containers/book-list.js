@@ -1,6 +1,8 @@
 //  Import libraries
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { selectBook } from '../actions/index';
+import { bindActionCreators } from 'redux';
 
 //  Create class
 class BookList extends Component {
@@ -30,5 +32,14 @@ function mapStateToProps(state) {
   };
 }
 
+//  Map dispatch to props
+function mapDispatchToProps(dispatch) {
+  //  Whenever selectBook is called, result is passed to all reducers
+  //  Anything returned will be props on BookList container
+  return bindActionCreators({ selectBook: selectBook }, dispatch);
+}
+
 //  Export Component
-export default connect(mapStateToProps)(BookList);
+//  Promote BookList from a component to a container
+//  Make new methods become props
+export default connect(mapStateToProps, mapDispatchToProps)(BookList);
